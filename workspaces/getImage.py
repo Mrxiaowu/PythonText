@@ -2,6 +2,7 @@
 import requests
 
 if __name__ == '__main__':
-    target = 'https://unsplash.com/'
-    req = requests.get(url=target)
+    target = '/napi/collections/1065976/'
+    headers = {'authorization': 'your Client-ID'}
+    req = requests.get(url=target, headers=headers, verify=False)
     print(req.text)
