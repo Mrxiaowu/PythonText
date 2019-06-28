@@ -1,3 +1,9 @@
+"""
+
+据说itchat容易被封号，还是封存了吧
+
+"""
+
 # 给文件助手发信息
 import itchat
 #
@@ -10,6 +16,7 @@ for friend in friendList:
     # 如果是演示目的，把下面的方法改为print即可
     # itchat.send(SINCERE_WISH % (friend['DisplayName']
     #     or friend['NickName']), friend['UserName'])
+    # 需要遍历朋友找到nickname  然后找到username
     print(friend['UserName'] + " " +friend['NickName'])
     if (friend['NickName']  == 'Sugar佳15979086491') :
         print("???" + friend['UserName'])
